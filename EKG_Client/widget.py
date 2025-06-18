@@ -60,7 +60,7 @@ class EKGSimulator(QWidget):
         ekg_data = {"input": sample}
         try:
             response = requests.post(
-                "http://10.0.0.224:5000/predict",
+                "http://10.0.0.xxx:5000/predict", #change to your remote server or localhost
                 headers={"Content-Type": "application/json"},
                 data=json.dumps(ekg_data)
             )
