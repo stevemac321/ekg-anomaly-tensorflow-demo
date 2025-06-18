@@ -37,6 +37,13 @@ venv\Scripts\activate       # or source venv/bin/activate on macOS/Linux
 python serve\_ekg\_autoencoder.py
 
 The server will run at `http://127.0.0.1:5000`.
+You can view the prediction results and logs on this web page in your browser. "EKG Predictions Dashboard".  
+Example:
+
+2025-06-18 05:13:10
+Prediction: [0.09907367825508118, -0.042691461741924286, 0.5079333186149597, 0.1889864206314087, 0.5483210682868958 ...]
+Error: 0.5520787835121155
+Anomaly: False
 
 ### Run the Qt Client
 
