@@ -6,7 +6,7 @@ from datetime import datetime
 app = Flask(__name__)
 model = keras.models.load_model('ekg_autoencoder.keras')
 
-THRESHOLD = 0.0400
+THRESHOLD = 0.3
 results = []  # Global list for dashboard
 
 @app.route('/predict', methods=['POST'])
