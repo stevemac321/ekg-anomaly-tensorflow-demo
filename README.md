@@ -2,10 +2,10 @@
 
 # TensorFlow: EKG Anomaly Webserver and Client
 
-NOTE:
-A placeholder model file `ekg_autoencoder.keras` is included but is not yet trained or integrated.
+NOTE: I was mostly interested in the infrastructure for now and checked in the work so far.
+A placeholder model file ekg_autoencoder.keras is included but is not yet trained or integrated. 
 The Flask server, web client, and JSON POST logic are functional, but the model will not return meaningful results until it is trained.
-Future work: train and validate an anomaly detection autoencoder, then integrate it with the `/predict` route.
+Future work: train and validate an anomaly detection autoencoder, then integrate it with the /predict route.
 
 ##Overview from TensorFlow: https://www.tensorflow.org/tutorials/generative/autoencoder
 ## Requirements
