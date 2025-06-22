@@ -27,17 +27,21 @@
 ---
 
 ## How to Run
+Run the model_client.py to load the keras model directly, it sends some hardcoded test data.  
+Or skip right to the "Start the Flask server" for the more full featured experience.
 
-### Start the Flask Server
+### Start the Flask Server 
 
-cd EKG\_Anomaly\_Server
 venv\Scripts\activate       # or source venv/bin/activate on macOS/Linux
 python serve_ekg_autoencoder.py
 
 The server will run at `http://127.0.0.1:5000`.
-Run the test.py in the client directory to get a sample out of the .csv files.
 
-You can view the prediction results and logs on this web page in your browser. "EKG Predictions Dashboard".  
+Run the flask_client.py.  It opens a random record from normal.csv and anomaly.csv, prints the result to
+the console.  The Flask server posts the result to its webpage.  If local ttp://127.0.0.1:5000, if the Flask
+server is on a remote machine, you can view it by <Remote Machine URL>:5000 as below:
+
+ "EKG Predictions Dashboard".  
 Example:
 
 2025-06-18 05:13:10
